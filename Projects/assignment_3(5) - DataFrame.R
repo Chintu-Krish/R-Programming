@@ -1,0 +1,23 @@
+Stud= data.frame(Student_name=c("ABC","XYZ","PQR", "MNO","VTV"),
+                 Gender=c("M","M","F","F","M"),
+                 Department=c("IT","MECH","ECE","EEE","CIVIL"),
+                 Marks=c("82%","85%","67%","73%","70%")
+)
+print(Stud)
+dim(Stud)
+summary(Stud)
+str(Stud)
+Stud["Department"]
+Stud$Age=c(22,21,20,20,20)
+Stud
+Stud[2:4,2:5]
+print((nrow(Stud)))
+print((ncol(Stud)))
+attributes(Stud)$names
+data.frame1<-data.frame(Menu=c("Idly","Dosa","Vada"),Price=c(20,25,10))
+data.frame2<-data.frame(Menu=c("Poori","Uttapam","Coffee"),Price=c(30,25,30))
+rbindframe<-rbind(data.frame1,data.frame2)
+rbindframe
+dataframe3<-data.frame(SL.No=c(1,2,3,4,5,6))
+cbindframe<-cbind(dataframe3,data.frame1)
+cbindframe
